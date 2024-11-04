@@ -7,6 +7,7 @@
             font-family: Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
+			line-height: 150%
         }
 
         /* Center the main content */
@@ -16,44 +17,51 @@
         }
 
         /* Style for the title */
-        h2 {
-            text-align: center;
-            margin-top: 20px;
+        h1 {
+            margin-top: 50px;
+			padding: 0px;
         }
 
         /* Flex container for the columns */
         .columns {
             display: flex;
-            margin-top: 20px;
+            gap: 30px; /* Space between the columns */
+            margin-top: 0px;
         }
 
-        /* First column takes 1/4 of the width */
+        /* First column takes 3/4 of the width */
         .column1 {
+            flex: 3;
+            padding: 0px;
+        }
+
+        /* Second column takes 1/4 of the width */
+        .column2 {
             flex: 1;
             padding: 20px;
             background-color: #f0f0f0; /* Light background for visual separation */
+            text-align: center; /* Center-aligns content within the second column */
         }
 
-        /* Second column takes 3/4 of the width */
-        .column2 {
-            flex: 3;
-            padding: 20px;
+        /* Style for the image in column2 */
+        .column2 img {
+            max-width: 100%; /* Ensures the image doesn't exceed column width */
+            height: auto;
+            margin-bottom: 15px; /* Space between image and links */
+            border-radius: 20px; /* Optional: rounds image corners */
         }
     </style>
 </head>
+
+
 <body>
 
 <div class="container">
-    <h2>Rachel McCarthy</h2>
+    <h1>Rachel McCarthy</h1>
 
     <div class="columns">
-        <!-- First column (1/4 width) -->
+        <!-- First column (3/4 width) -->
         <div class="column1">
-            <p>test</p>
-        </div>
-
-        <!-- Second column (3/4 width) -->
-        <div class="column2">
             <p>Rachel McCarthy is a PhD researcher at University College Cork, Ireland, where she previously earned a First Class Honours in her undergraduate degree in "Digital Humanities and 
             Information Technology". Her Bachelor's thesis used stylometry, collocation analysis, and relative frequencies to explore how the popularity of 19th-century literature was impacted by 
             the gender of the author.</p>
@@ -68,6 +76,17 @@
             and natural language processing to pursue questions about the centrality of subject matters to Ireland’s literary canon, authorial language and individual style through time. Passionate 
             about advancing text analysis, Rachel aims to uncover new insights into literary and historical texts using digital methodologies.</p>
         </div>
+		
+		<!-- Second column (1/4 width) -->
+        <div class="column2">
+            <!-- Add image above the links -->
+            <img src="C:\Users\rache\Desktop\College\UCC\Misc\CV & Photos\Rachel_McCarthy.png" alt="Profile Picture">
+
+            <p><a href="https://orcid.org/0009-0007-5190-501X" target="_target">ORCiD</a></p>
+			<p><a href="https://scholar.google.co.uk/citations?hl=en&user=zR9ldxYAAAAJ" target="_target">Google Scholar</a></p>
+			<p><a href="https://www.linkedin.com/in/rachel-mccarthy-43894918a/" target="_target">LinkedIn</a></p>
+        </div>
+		
     </div>
 </div>
 
