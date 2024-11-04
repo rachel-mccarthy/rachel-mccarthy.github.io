@@ -1,26 +1,75 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        /* Apply Helvetica font to the entire body */
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center the main content */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Style for the title */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Flex container for the columns */
+        .columns {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        /* First column takes 1/4 of the width */
+        .column1 {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0; /* Light background for visual separation */
+        }
+
+        /* Second column takes 3/4 of the width */
+        .column2 {
+            flex: 3;
+            padding: 20px;
+        }
+    </style>
+</head>
 <body>
 
+<div class="container">
+    <h2>Rachel McCarthy</h2>
 
-<h2>Rachel McCarthy</h2>
-<p><br></p>
-<p>Rachel McCarthy is a PhD researcher at University College Cork, Ireland, where she previously earned a First Class Honours in her undergraduate degree in "Digital Humanities and 
-Information Technology". Her Bachelor's thesis used stylometry, collocation analysis, and relative frequencies to explore how the popularity of 19th-century literature was impacted by 
-the gender of the author.</p>
+    <div class="columns">
+        <!-- First column (1/4 width) -->
+        <div class="column1">
+            <p>test</p>
+        </div>
 
+        <!-- Second column (3/4 width) -->
+        <div class="column2">
+            <p>Rachel McCarthy is a PhD researcher at University College Cork, Ireland, where she previously earned a First Class Honours in her undergraduate degree in "Digital Humanities and 
+            Information Technology". Her Bachelor's thesis used stylometry, collocation analysis, and relative frequencies to explore how the popularity of 19th-century literature was impacted by 
+            the gender of the author.</p>
 
-<p>She then completed a "Digital Text Analysis" Master’s degree at the University of Antwerp, Belgium, where she achieved a Distinction overall as well as a HOCI (highest possible grade) 
-on her Master's thesis, recognizing her outstanding performance in investigating the stylistic identifiers of authorial gender by examining the novels of men, women, and women who 
-published under male pen names over 300 years.</p>
+            <p>She then completed a "Digital Text Analysis" Master’s degree at the University of Antwerp, Belgium, where she achieved a Distinction overall as well as a HOCI (highest possible grade) 
+            on her Master's thesis, recognizing her outstanding performance in investigating the stylistic identifiers of authorial gender by examining the novels of men, women, and women who 
+            published under male pen names over 300 years.</p>
 
-
-<p>She is currently a PhD reseracher at UCC as part of <a href="https://www.horizoncascade.net/" target="_blank">CASCADE</a>, a Horizon Europe 
-<a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks" target="_blank">MSCA</a> and <a href="https://www.ukro.ac.uk/" target="_blank">UKRO</a> Doctoral 
-Network. The PhD project, entitled <a href="https://www.horizoncascade.net/phd5/" target="_blank">"Measuring Change in Irish Literature"</a>, uses techniques from cultural analytics 
-and natural language processing to pursue questions about the centrality of subject matters to Ireland’s literary canon, authorial language and individual style through time. Passionate 
-about advancing text analysis, Rachel aims to uncover new insights into literary and historical texts using digital methodologies.</p>
-
+            <p>She is currently a PhD researcher at UCC as part of <a href="https://www.horizoncascade.net/" target="_blank">CASCADE</a>, a Horizon Europe 
+            <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks" target="_blank">MSCA</a> and <a href="https://www.ukro.ac.uk/" target="_blank">UKRO</a> Doctoral 
+            Network. The PhD project, entitled <a href="https://www.horizoncascade.net/phd5/" target="_blank">"Measuring Change in Irish Literature"</a>, uses techniques from cultural analytics 
+            and natural language processing to pursue questions about the centrality of subject matters to Ireland’s literary canon, authorial language and individual style through time. Passionate 
+            about advancing text analysis, Rachel aims to uncover new insights into literary and historical texts using digital methodologies.</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
